@@ -24,6 +24,8 @@ on:
         
 jobs:
   create_torrent:
+    permissions:
+      contents: none
     runs-on: ubuntu-latest
     steps:
       - name: Install torrenttools
